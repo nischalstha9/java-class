@@ -50,10 +50,11 @@ public class Number {
     }
 
     double getFactorial() {
-        double num = this.number;
-        int i, fact = 1;
-        for (i = 1; i <= num; i++) {
-            fact = fact * i;
+        double fact = 1;
+        int num =(int) this.number;
+        while(num>1) {
+            fact *= num;
+            num--;
         }
         return fact;
     }
@@ -84,7 +85,7 @@ public class Number {
     }
 
     public static void main(String[] args) {
-        Number num = new Number(4);
+        Number num = new Number(123);
         System.out.println(num.getFactorial());
         System.out.println(num.getSqrt());
         System.out.println(num.sumDigits());
