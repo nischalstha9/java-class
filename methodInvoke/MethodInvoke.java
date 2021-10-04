@@ -5,11 +5,11 @@ public class MethodInvoke {
     System.out.println("This is method 1");
     try {
     	method2();	
-	}catch (Exception e){
-		System.out.println(e.getMessage());
-	}finally {
-		System.out.println("Program finished");
-	}
+    }catch (Exception e){
+		  System.out.println(e.getMessage());
+	  }finally {
+      System.out.println("Program finished");
+    }
   }
 
   static void method2() throws Exception {
