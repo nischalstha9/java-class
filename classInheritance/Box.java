@@ -3,7 +3,7 @@ package classInheritance;
 public class Box {
     public double len, breadth;
 
-    public Box(int len, int bre) {
+    Box(int len, int bre) {
         this.len = len;
         this.breadth = bre;
     }

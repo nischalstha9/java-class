@@ -3,7 +3,7 @@ package classInheritance;
 public class Box3D extends Box {
     public double height;
 
-    public Box3D(int len, int bre, int ht) {
+    Box3D(int len, int bre, int ht) {
         super(len, bre);
         this.height = ht;
     }
